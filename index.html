@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Roskilde Koncert Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Roskilde Koncert Reminder</h1>
+
+<div class="filters">
+  <div>
+    <label>Scene:</label>
+    <div id="sceneFilter" class="checkbox-group"></div>
+  </div>
+  <div>
+    <label>Vurdering:</label>
+    <div id="vurderingFilter" class="checkbox-group">
+      <label><input type="checkbox" value="JA JA JA"> JA JA JA</label>
+      <label><input type="checkbox" value="ja"> ja</label>
+      <label><input type="checkbox" value="nok"> nok</label>
+      <label><input type="checkbox" value="måske"> måske</label>
+      <label><input type="checkbox" value="kig forbi"> kig forbi</label>
+      <label><input type="checkbox" value="idk"> idk</label>
+      <label><input type="checkbox" value="nok ikke"> nok ikke</label>
+      <label><input type="checkbox" value="nej"> nej</label>
+    </div>
+  </div>
+</div>
+
+<div class="concerts" id="concertList">Indlæser koncerter...</div>
+
+<script src="index.js"></script>
+</body>
+</html>
