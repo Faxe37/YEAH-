@@ -1,45 +1,59 @@
-
+/* Stiler for hele body-elementet (baggrund og skrifttype for hele siden) */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 1rem;
-  background: #f7f7f7;
+  font-family: Arial, sans-serif; /* Skrifttypen bruges til tekst på siden */
+  margin: 0; /* Fjerner standard margin rundt om hele body */
+  padding: 1rem; /* Tilføjer lidt luft (afstand) indvendigt i body */
+  background: #f7f7f7; /* Lys grå baggrundsfarve */
 }
+
+/* Stiler for alle <h1> elementer (typisk sidens overskrift) */
 h1 {
-  text-align: center;
-  color: #ff6600;
+  text-align: center; /* Centrerer overskriften horisontalt */
+  color: #ff6600; /* Giver overskriften en orange farve */
 }
+
+/* Stiler for container med filtre (f.eks. checkbokse og dropdowns) */
 .filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 1rem;
+  display: flex; /* Lægger elementer vandret ved siden af hinanden */
+  flex-wrap: wrap; /* Gør at elementerne hopper ned på ny linje hvis der ikke er plads */
+  gap: 1rem; /* Giver afstand mellem elementerne */
+  justify-content: center; /* Centrerer elementerne horisontalt */
+  margin-bottom: 1rem; /* Tilføjer luft nedenunder filter-sektionen */
 }
+
+/* Stiler for <select> dropdown-menuer */
 select {
-  padding: 0.5rem;
-  font-size: 1rem;
+  padding: 0.5rem; /* Indvendig afstand i dropdown */
+  font-size: 1rem; /* Gør teksten let læselig */
 }
+
+/* Stiler for containeren der holder alle koncerter */
 .concerts {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 800px;
-  margin: auto;
+  display: flex; /* Bruger flexbox layout */
+  flex-direction: column; /* Placerer elementer lodret under hinanden */
+  gap: 1rem; /* Luft mellem hver koncert */
+  max-width: 800px; /* Maksimal bredde så det ikke bliver for bredt på store skærme */
+  margin: auto; /* Centrerer containeren horisontalt på siden */
 }
+
+/* Stiler for hver enkelt koncertboks */
 .concert {
-  background: white;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: white; /* Hvid baggrund for hver koncert */
+  padding: 1rem; /* Luft inde i koncertboksen */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Svag skygge rundt om koncertboksen for at give dybde */
 }
+
+/* Stiler for favorit-knappen (stjerneknap) */
 .favorite {
-  float: right;
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
+  float: right; /* Placerer knappen til højre i koncertboksen */
+  background: #ff6600; /* Orange baggrund */
+  color: white; /* Hvid tekstfarve */
+  border: none; /* Fjerner kantlinje */
+  padding: 0.3rem 0.6rem; /* Lidt polstring inde i knappen */
+  cursor: pointer; /* Gør markøren til en hånd når man holder over knappen */
 }
+
+/* Ændrer udseendet på favorit-knappen når den er aktiv (gemt som favorit) */
 .favorite.saved {
-  background: #333;
+  background: #333; /* Skifter baggrunden til mørkegrå for at vise den er gemt */
 }
